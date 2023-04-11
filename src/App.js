@@ -53,7 +53,11 @@ function App() {
   };
 
   const toggleRead = () => {
-    setIsRead(!isRead);
+    setIsRead(true) 
+  };
+
+  const toggleRead2 = () => {
+    setIsRead(false);
   };
 
   const article = currentLang === "EN" ? EN : UA;
@@ -84,7 +88,7 @@ function App() {
           <button onClick={toggleArticle} className="article__btn">
             {buttonText}
           </button>
-          <button onClick={toggleRead} className="article__btn">
+          <button onClick={toggleRead2} className="article__btn">
             {article.btn_two}
           </button>
         </div>
