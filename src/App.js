@@ -44,7 +44,9 @@ function App() {
   const [currentLang, setCurrentLang] = useState("EN");
 
   const buttonTexts = () => {
-    isShow ? setButtonText(`${article.btn_read}`) : setButtonText(`${article.btn_close}`);
+    isShow
+      ? setButtonText(`${article.btn_read}`)
+      : setButtonText(`${article.btn_close}`);
   };
 
   const toggleArticle = () => {
@@ -53,7 +55,7 @@ function App() {
   };
 
   const toggleRead = () => {
-    setIsRead(true) 
+    setIsRead(true);
   };
 
   const toggleRead2 = () => {
@@ -66,7 +68,7 @@ function App() {
     setCurrentLang("UA");
     setButtonText(UA.btn_read);
   };
-  
+
   const setLangEN = () => {
     setCurrentLang("EN");
     setButtonText(EN.btn_read);
